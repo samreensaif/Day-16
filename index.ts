@@ -1,19 +1,37 @@
-// Question 46: Enhanced Laptop Object: Construct an object for a laptop including properties make, model, year, and a method describe() that logs a sentence about the laptop.
+// Question 47: Advanced Array Destructuring: Given an array of objects representing different laptops, each with properties make, model, and year, use array destructuring to assign the first and second laptops to variables. Then, log these variables.
 
-let laptop=
+
+// define objects in array
+let laptop = [
    {
     make : " HP",
     model: "eliteBook",
-    year: 2024,
-    describe : function(){
+    year: 2020
+},
+{
+    make : " Intel",
+    model: "corei5",
+    year: 2018
+},
+{
+    make : " Dell",
+    model: "inspiron 14",
+    year: 2022
+}, ];
 
-        
-        console.log(`This Laptop is ${laptop.make} model ${laptop.model} makes in the year ${laptop.year}` )
-       
-        console.log(`this laptop is ${this.make} ${this.model} in year ${this.year}` )
+console.log(laptop)           //prints array of 3 objects
 
-        console.log(this.make, this.model,this.year )
-    }
-}
+//array destructuring
 
-laptop.describe()
+let laptop1 = laptop[0];
+
+console.log(`first object in array oflaptop is: `, laptop1)    // print 1st object
+
+
+let laptop2 = laptop[1];
+
+console.log(`second object in array oflaptop is: `, laptop2) //print 2ns object
+
+let laptop3 = laptop[2];
+
+console.log(`third object in array oflaptop is: `, laptop3) //print 3rd object
